@@ -26,6 +26,7 @@ a{
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 /* menu part css start */
 .menu_part{
@@ -40,6 +41,7 @@ body{
     position: relative;
     transition: all linear .3s;
 }
+.menu_part .nav-pills .nav-link.active:before,
 .menu_part .nav-item .nav-link:before{
     height: 3px;
     width: 70%;
@@ -52,6 +54,7 @@ body{
     opacity: 0;
      transition: all linear .3s;
 }
+.menu_part .nav-pills .nav-link.active:after,
 .menu_part .nav-item .nav-link:after{
     height: 3px;
     width: 35%;
@@ -74,6 +77,20 @@ body{
 }
 .menu_part .nav-item.active .nav-link:before,
 .menu_part .nav-item.active .nav-link:after{
+    opacity: 1;
+}
+.navcss{
+    background: #12b0c4;
+}
+.nav-pills .nav-link.active{
+    position: relative;
+}
+.menu_part .nav-pills .nav-link.active{
+    background: none;
+    color: #fff;
+}
+.menu_part .nav-pills .nav-link.active:before,
+.menu_part .nav-pills .nav-link.active:after{
     opacity: 1;
 }
 /* menu part css end */
